@@ -1,0 +1,16 @@
+# Virtual Environment
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Compiled files
+*.pyc
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Dependency directories
+env/
