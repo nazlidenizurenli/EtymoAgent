@@ -75,8 +75,10 @@ def extract_etymology_pairs(etymology_text):
         pattern = rf'(?:[Ff]rom\s+)?(?:\w+\s+)?({lang})\s+([^\s,]+)'
         matches = re.findall(pattern, etymology_text, re.IGNORECASE)
         if matches:
-            print("FOUND MATCH")
-            results.append((matches[0][0], matches[0][1]))
+            # print("FOUND MATCH")
+            # print(matches)
+            results.append(matches[0])
+            # results.append((matches[0][0], matches[0][1]))
     if not results:
         print("NO MATCH")
     else:
