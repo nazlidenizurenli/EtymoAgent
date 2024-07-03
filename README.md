@@ -10,8 +10,8 @@ EtymoAgent is a machine learning-powered linguist agent designed to analyze word
 
 ## Technologies
 - Python for data processing and machine learning
-- MongoDB/MySQL for storing word data and their etymology
-- TensorFlow/Keras/Scikit-Learn for machine learning
+- MySQL for storing word data and their etymology
+- TensorFlow for machine learning
 - Flask/Django for the API
 - Beautiful Soup/Scrapy for web scraping
 
