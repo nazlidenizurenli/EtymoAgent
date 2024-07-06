@@ -78,7 +78,7 @@ def get_etymology():
     if not is_valid_word(word):
         return jsonify({'error': 'Please enter a valid English word.'})
     
-    cosine_program_path = os.path.join(os.environ.get("ETYMOAGENT"), 'models', 'levenshtein.py')
+    cosine_program_path = os.path.join(os.environ.get("ETYMOAGENT"), 'models', 'agent.py')
     try:
         result = subprocess.run(['python3', cosine_program_path, word], capture_output=True, text=True, check=True)
         output = result.stdout.strip()
