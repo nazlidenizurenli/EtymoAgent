@@ -3,7 +3,6 @@ document.getElementById('wordForm').addEventListener('submit', function(event) {
     
     const word = document.getElementById('wordInput').value;
 
-    // Client-side validation
     if (!/^[a-zA-Z]+$/.test(word)) {
         alert('Please enter a valid English word (alphabetic characters only).');
         return;
